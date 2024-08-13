@@ -1,4 +1,17 @@
+body::before{
+  content: "";
+  background: url(https://asset-prod.france.fr/2_2_2024_Paris2024_ec315c61a0.jpg);
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
 #root {
+  position: relative;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
