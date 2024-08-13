@@ -1,5 +1,5 @@
 import './App.css'
-import { CountrySection } from './components/Layout'
+import { CountrySection } from './components/CountrySection'
 
 const App = () => {
   return(
