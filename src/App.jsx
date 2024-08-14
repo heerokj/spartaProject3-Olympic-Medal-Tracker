@@ -1,13 +1,22 @@
-import './App.css'
-import { CountrySection } from './components/CountrySection'
+import { useState } from "react";
+import "./App.css";
+import CountrySection from "./components/CountrySection";
+import List from "./components/List";
+import Header from "./components/Header";
 
 const App = () => {
-  return(
-    <>
-      <h1>2024 파리 올림픽🏅</h1>
-      <CountrySection></CountrySection>
-    </>
-  )
-}
+  const [countries, setCountries] = useState([]);
 
-export default App
+  return (
+    <div className="container">
+      <Header></Header>
+      <CountrySection
+        countries={countries}
+        setCountries={setCountries}
+      ></CountrySection>
+      <List countries={countries} setCountries={setCountries}></List>
+    </div>
+  );
+};
+
+export default App;
